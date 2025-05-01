@@ -2,3 +2,4 @@
 *.pdf
 *.txt
 *.env
+__pycache___
