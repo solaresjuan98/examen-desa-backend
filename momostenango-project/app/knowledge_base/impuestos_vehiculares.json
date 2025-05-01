@@ -1,0 +1,10 @@
+{
+    "tema": "Impuesto vehicular",
+    "descripcion": "Costos y requisitos para el pago de impuesto vehicular en Momostenango.",
+    "tarifas": {
+        "Motos": "Q100 anuales",
+        "Vehículos livianos": "Q300 anuales",
+        "Vehículos pesados": "Q600 anuales"
+    },
+    "periodo_pago": "Del 1 de enero al 31 de marzo de cada año."
+}

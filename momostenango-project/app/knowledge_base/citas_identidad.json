@@ -1,0 +1,11 @@
+{
+    "tema": "Citas para trámite de identidad",
+    "descripcion": "Información sobre cómo agendar citas para trámites de identidad.",
+    "proceso": [
+        "Ingresar al portal www.momostenango.gob.gt/citas",
+        "Seleccionar tipo de trámite: renovación, reposición o primera vez.",
+        "Seleccionar fecha y hora disponibles.",
+        "Recibir confirmación por correo electrónico."
+    ],
+    "atencion_presencial": "En las oficinas municipales, de lunes a viernes de 8:00 AM a 3:00 PM."
+}

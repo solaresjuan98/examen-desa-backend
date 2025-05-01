@@ -1,0 +1,32 @@
+{
+    "tema": "Impuestos, tasas y reglamentos locales",
+    "descripcion": "Información general sobre los principales impuestos, tasas y reglamentos municipales.",
+    "informacion_impuestos": [
+        {
+            "nombre": "IUSI (Impuesto Único Sobre Inmuebles)",
+            "descripcion": "Debe pagarse trimestralmente por los propietarios de bienes inmuebles.",
+            "formas_pago": [
+                "En línea a través del portal municipal",
+                "Presencial en oficinas municipales"
+            ]
+        },
+        {
+            "nombre": "Tasa de Basura",
+            "descripcion": "Cobro mensual por el servicio de recolección y disposición de desechos sólidos.",
+            "formas_pago": [
+                "Agregado a la factura de agua municipal",
+                "Pago directo en cajas municipales"
+            ]
+        }
+    ],
+    "informacion_reglamentos": [
+        {
+            "nombre": "Reglamento de Construcciones",
+            "descripcion": "Normas para la construcción de viviendas, comercios y obras públicas dentro del municipio."
+        },
+        {
+            "nombre": "Reglamento de Uso de Espacios Públicos",
+            "descripcion": "Regula la utilización temporal de calles, plazas y parques municipales."
+        }
+    ]
+}

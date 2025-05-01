@@ -1,0 +1,33 @@
+{
+    "tema": "Plantillas de trámites municipales",
+    "descripcion": "Acceso a plantillas y formularios para realizar diversos trámites en la Municipalidad.",
+    "plantillas_disponibles": [
+        {
+            "nombre": "Solicitud de Permiso de Construcción",
+            "url_descarga": "https://www.momostenango.gob.gt/plantillas/permiso_construccion.pdf",
+            "requisitos": [
+                "Copia del DPI del solicitante",
+                "Planos de construcción firmados",
+                "Pago de tasa municipal correspondiente"
+            ]
+        },
+        {
+            "nombre": "Formulario de Licencia de Funcionamiento",
+            "url_descarga": "https://www.momostenango.gob.gt/plantillas/licencia_funcionamiento.pdf",
+            "requisitos": [
+                "Copia del DPI",
+                "Patente de comercio",
+                "Pago del impuesto de licencia"
+            ]
+        },
+        {
+            "nombre": "Solicitud de Uso de Espacio Público",
+            "url_descarga": "https://www.momostenango.gob.gt/plantillas/uso_espacio_publico.pdf",
+            "requisitos": [
+                "Solicitud por escrito",
+                "Plano del área a utilizar",
+                "Autorización de la Oficina de Espacios Públicos"
+            ]
+        }
+    ]
+}

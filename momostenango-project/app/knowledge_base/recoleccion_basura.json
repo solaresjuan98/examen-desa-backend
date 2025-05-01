@@ -1,0 +1,11 @@
+{
+    "tema": "Recolección de basura",
+    "descripcion": "Información sobre los horarios y zonas de recolección de basura en Momostenango.",
+    "detalle": {
+        "zona_1": "Lunes y jueves a partir de las 7:00 AM.",
+        "zona_2": "Martes y viernes a partir de las 7:00 AM.",
+        "zona_3": "Miércoles y sábado a partir de las 7:00 AM.",
+        "zona_4": "Lunes, miércoles y viernes a partir de las 6:30 AM."
+    },
+    "contacto": "Departamento de Servicios Públicos, Tel: 1234-5678"
+}

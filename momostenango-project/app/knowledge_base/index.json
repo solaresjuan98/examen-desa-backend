@@ -1,0 +1,10 @@
+{
+    "descripcion": "Directorio de temas disponibles en la base de conocimiento.",
+    "temas": [
+        "Recolección de basura",
+        "Reporte de incidencias",
+        "Permisos de construcción",
+        "Impuestos vehiculares",
+        "Citas para trámite de identidad"
+    ]
+}
