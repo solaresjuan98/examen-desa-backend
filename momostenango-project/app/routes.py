@@ -15,12 +15,10 @@ from sentence_transformers import SentenceTransformer
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
 )
 
 client2 = OpenAI(
     base_url="https://api.openai.com/v1",
-    api_key="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",
 )
 
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')  # Gratis y muy bueno
