@@ -177,7 +177,7 @@ CREATE EXTENSION IF NOT EXISTS vector;
 
 - **Persistencia robusta de embeddings**: Agregar validaciones estrictas para evitar insertar `NULL` en el campo `embedding`. Incluso puedes usar triggers o constraints.
   
-- **Indexación con `pgvector`**: Asegúrate de tener índices `IVFFLAT` o `HNSW` para escalar mejor cuando haya muchos registros.
+- **Indexación con `pgvector`**: Se debe asegurar de tener índices `IVFFLAT` o `HNSW` para escalar mejor cuando haya muchos registros.
 
 - **Monitoreo de calidad del embedding**: Guardar la longitud del vector, modelo usado y un checksum para verificar si fue generado correctamente.
 
