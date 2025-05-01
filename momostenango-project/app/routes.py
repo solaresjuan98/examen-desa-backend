@@ -11,17 +11,15 @@ from app.db import db
 from app.mcp import list_knowledge_files, load_knowledge_file, search_knowledge
 import json as jsonlib
 from sentence_transformers import SentenceTransformer
-
+import os
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENAI_API_KEY")
 )
 
-client2 = OpenAI(
-    base_url="https://api.openai.com/v1",
-)
 
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')  # Gratis y muy bueno
+model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')  
 
 
 async def poblar_embeddings():
@@ -43,15 +41,15 @@ async def poblar_embeddings():
 
 
 # buscar conocimiento
-def generar_embedding(text):
-    print("generando embedding", text)
-    response = client2.embeddings.create(
-        input=text,
-        model='text-embedding-3-small'
-    )
+# def generar_embedding(text):
+#     print("generando embedding", text)
+#     response = client2.embeddings.create(
+#         input=text,
+#         model='text-embedding-3-small'
+#     )
 
-    print(response)
-    return response.data[0].embedding
+#     print(response)
+#     return response.data[0].embedding
 
 def generar_embedding_local(text):
     print("Generando embedding localmente")
@@ -432,7 +430,8 @@ def register_routes(app):
     async def search_vector(request):
 
         data = await request.json()
-        text= data.get("texto", "")
+        text= data.get("query", "")
+        chat_id= data.get("chat_id", "")
         results = await buscar_conocimiento(text)
         # buscar en los json previamente creados
         search_json_files = await search_knowledge(text)
@@ -443,6 +442,9 @@ def register_routes(app):
         pregunta = "convierte este json a un listado de pasos resumido en 300 palabras con la data obtenida, sin especificar origen amigo " + str(json_results)
 
         respuesta = agent.run(pregunta)
+
+        ## guardar consulta
+        await guardar_consulta(chat_id, text, respuesta.content)
         return json({"resultados": respuesta.content, "status": 200}, status=200)
         #return json({"resultados": results, "status": 200}, status=200)
     

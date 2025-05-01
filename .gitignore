@@ -3,3 +3,4 @@
 *.txt
 *.env
 __pycache___
+__pycache__
