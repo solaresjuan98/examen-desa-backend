@@ -1,0 +1,152 @@
+[
+    {
+        "nombre": "Juan Antonio Solares Samayoa",
+        "email": "juan.solares@example.com",
+        "identificacion": "2996110000101"
+    },
+    {
+        "nombre": "María Fernanda López García",
+        "email": "maria.lopez@example.com",
+        "identificacion": "2345120000202"
+    },
+    {
+        "nombre": "Carlos Enrique Méndez Rivas",
+        "email": "carlos.mendez@example.com",
+        "identificacion": "2157890000303"
+    },
+    {
+        "nombre": "Ana Lucía Pérez Morales",
+        "email": "ana.perez@example.com",
+        "identificacion": "2893450000404"
+    },
+    {
+        "nombre": "Luis Eduardo González",
+        "email": "luis.gonzalez@example.com",
+        "identificacion": "2198760000505"
+    },
+    {
+        "nombre": "Diana Sofía Ramírez",
+        "email": "diana.ramirez@example.com",
+        "identificacion": "2567120000606"
+    },
+    {
+        "nombre": "José Alejandro Herrera",
+        "email": "jose.herrera@example.com",
+        "identificacion": "2789010000707"
+    },
+    {
+        "nombre": "Andrea Paola Díaz",
+        "email": "andrea.diaz@example.com",
+        "identificacion": "2992340000808"
+    },
+    {
+        "nombre": "Kevin Estuardo Chávez",
+        "email": "kevin.chavez@example.com",
+        "identificacion": "2333450000909"
+    },
+    {
+        "nombre": "Gabriela Isabel Figueroa",
+        "email": "gabriela.figueroa@example.com",
+        "identificacion": "2901230001010"
+    },
+    {
+        "nombre": "Oscar David Escobar",
+        "email": "oscar.escobar@example.com",
+        "identificacion": "2109870001111"
+    },
+    {
+        "nombre": "Karla Patricia Jiménez",
+        "email": "karla.jimenez@example.com",
+        "identificacion": "2888990001212"
+    },
+    {
+        "nombre": "Ricardo Antonio Marroquín",
+        "email": "ricardo.marroquin@example.com",
+        "identificacion": "2345670001313"
+    },
+    {
+        "nombre": "Silvia Lorena Barrios",
+        "email": "silvia.barrios@example.com",
+        "identificacion": "2456780001414"
+    },
+    {
+        "nombre": "Esteban Julián Soto",
+        "email": "esteban.soto@example.com",
+        "identificacion": "2890000001515"
+    },
+    {
+        "nombre": "Laura Daniela Reyes",
+        "email": "laura.reyes@example.com",
+        "identificacion": "2912340001616"
+    },
+    {
+        "nombre": "Fernando Rafael Carrillo",
+        "email": "fernando.carrillo@example.com",
+        "identificacion": "2765430001717"
+    },
+    {
+        "nombre": "Melissa Guadalupe Cruz",
+        "email": "melissa.cruz@example.com",
+        "identificacion": "2654320001818"
+    },
+    {
+        "nombre": "Julio César Lima",
+        "email": "julio.lima@example.com",
+        "identificacion": "2543210001919"
+    },
+    {
+        "nombre": "Lucía Beatriz Lemus",
+        "email": "lucia.lemus@example.com",
+        "identificacion": "2432100002020"
+    },
+    {
+        "nombre": "Pedro Javier Alvarado",
+        "email": "pedro.alvarado@example.com",
+        "identificacion": "2987650002121"
+    },
+    {
+        "nombre": "Sofía Margarita Salazar",
+        "email": "sofia.salazar@example.com",
+        "identificacion": "2776540002222"
+    },
+    {
+        "nombre": "Manuel Arturo Mérida",
+        "email": "manuel.merida@example.com",
+        "identificacion": "2998760002323"
+    },
+    {
+        "nombre": "Elena Carolina Rojas",
+        "email": "elena.rojas@example.com",
+        "identificacion": "2654320002424"
+    },
+    {
+        "nombre": "David Mauricio López",
+        "email": "david.lopez@example.com",
+        "identificacion": "2789010002525"
+    },
+    {
+        "nombre": "Nancy Alejandra Ruano",
+        "email": "nancy.ruano@example.com",
+        "identificacion": "2345000002626"
+    },
+    {
+        "nombre": "Cristian Omar Castañeda",
+        "email": "cristian.castaneda@example.com",
+        "identificacion": "2499990002727"
+    },
+    {
+        "nombre": "Paola Vanessa Molina",
+        "email": "paola.molina@example.com",
+        "identificacion": "2678900002828"
+    },
+    {
+        "nombre": "Jorge Luis Sandoval",
+        "email": "jorge.sandoval@example.com",
+        "identificacion": "2788880002929"
+    },
+    {
+        "nombre": "Valeria Noemí Duarte",
+        "email": "valeria.duarte@example.com",
+        "identificacion": "2991230003030"
+    }
+]

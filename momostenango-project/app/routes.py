@@ -128,7 +128,7 @@ async def guardar_archivo(chat_id, tipo_archivo, ruta, nombre_original):
     last_id = resultado[0]["last_id"] if resultado else None
     query = f"""
         insert into archivos (consulta_id, tipo_archivo, url_archivo, nombre_original)
-        values ({last_id}, '{tipo_archivo}', 'ruta/prueba', '{nombre_original}');
+        values ({last_id}, '{tipo_archivo}', '/Users/juansolares/courses/prueba-innovacion/backend/img', '{nombre_original}');
     """
     print(query)
     await db.execute(query)
@@ -234,7 +234,7 @@ def register_routes(app):
                 1, pregunta, respuesta
             )  # Guardar la consulta y respuesta en la base de datos
             await guardar_archivo(
-                1,
+                chat_id,
                 tipo_archivo.decode("utf-8"),
                 "ruta/del/archivo",
                 nombre_archivo.decode("utf-8"),
@@ -347,9 +347,13 @@ def register_routes(app):
                 c.contenido , 
                 c.tipo_mensaje, 
                 r.contenido as contenido_respuesta,
-                r.confianza
+                r.confianza,
+                a.nombre_original,
+                a.url_archivo,
+                a.tipo_archivo
                 FROM consultas c 
                 JOIN respuestas r on c.id  = r.consulta_id
+                left join archivos a on c.id  = a.consulta_id
             where  c.session_id  = {id}
             order by c.id asc;
         """
@@ -362,19 +366,7 @@ def register_routes(app):
 
     @app.router.delete("/delete-chat/{id}")
     async def delete_chat(request, id: int):
-        # delete_query = """
-        #     DELETE FROM archivos WHERE consulta_id IN (SELECT id FROM consultas WHERE session_id = $1);
-        #     DELETE FROM respuestas WHERE consulta_id IN (SELECT id FROM consultas WHERE session_id = $1);
-        #     DELETE FROM consultas WHERE session_id = $1;
-        # """
 
-        # verify_query = "SELECT COUNT(*) FROM chat_sessions WHERE id = $1"
-        # result = await db.fetch(verify_query, [id])
-
-        # if result['count'] == 0:
-        #     return json({"error": "El chat no existe"}, status=404)
-
-        # await db.execute(delete_query, [id])
         await db.execute(
         "DELETE FROM archivos WHERE consulta_id IN (SELECT id FROM consultas WHERE session_id = $1)",
         id
@@ -439,7 +431,7 @@ def register_routes(app):
         json_results2 = jsonlib.dumps(search_json_files, default=str)
 
         json_final = json_results + " " + json_results2
-        pregunta = "convierte este json a un listado de pasos resumido en 300 palabras con la data obtenida, sin especificar origen amigo " + str(json_results)
+        pregunta = "convierte este json a un listado de pasos resumido en 300 palabras con la data obtenida, sin especificar origen amigo " + str(json_final)
 
         respuesta = agent.run(pregunta)
 

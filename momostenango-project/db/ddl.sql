@@ -50,8 +50,6 @@ CREATE TABLE archivos (
 );
 
 
-CREATE EXTENSION IF NOT EXISTS vector;
-
 CREATE TABLE knowledge_embeddings (
     id SERIAL PRIMARY KEY,
     tipo TEXT NOT NULL,            -- 'FAQ' o 'REGLAMENTO'
@@ -61,6 +59,8 @@ CREATE TABLE knowledge_embeddings (
     creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP  -- Para control de cambios
 );
 
+
+CREATE EXTENSION IF NOT EXISTS vector;
 
 -- FAQ sobre recolección de basura
 INSERT INTO knowledge_embeddings (tipo, titulo, contenido)
